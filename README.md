@@ -3,12 +3,12 @@ My personal repository for personal notes on machine learning algorithms and cou
 
 The contents of this repository consist of 6 essential aspects of machine learning in Jupyter Notebook. With each notebook consisting of example algorithms/models and a description, application, and pros and cons. 
 
-* Data Preprocessing 
-* Dimensionality Reduction
+* **Data Preprocessing** 
+* **Dimensionality Reduction**
   * Principal Component Analysis
   * Linear Discriminant Analysis
-* Supervised Learning
-  * Regression
+* **Supervised Learning**
+ * Regression
     * Simple Linear Regression
     * Polynomial Linear Regression
   * Classification
@@ -18,11 +18,11 @@ The contents of this repository consist of 6 essential aspects of machine learni
     * Naive Bayes
     * Decission Tree
     * Random Forest
-* Unsupervised Learning
+* **Unsupervised Learning
   * K-Means Clustering
   * Hierarchical Clustering
-* Reinforcement Learning (TBA)
-* Deep Learning
+* **Reinforcement Learning (TBA)
+* **Deep Learning
   * Artificial Neural Network
   * Convolution Neural Network
   * Recurrent Neural Network (TBA)

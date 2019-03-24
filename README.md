@@ -33,4 +33,4 @@ The contents of this repository consist of 6 essential aspects of machine learni
 
 The coursework folder has my report on *Bayesian Modelling* and *Inference* with the assignment details on a seperate pdf in each respective coursework folder. 
 
-Example of the topics covered within the assignment were **generative models, non-paramentric representation,** and  **Gaussian Processes** in the *Bayesian Modelling* coursework. Whilst approximate inference using **ICM, MCMC, Mean Field Variational Inference** and **Variational AutoEncoders (VAE)** were covered in the *Inference* coursework. Both report achieved high first class mark. 
+Example of the topics covered within the assignment were **generative models, non-parametric representation,** and  **Gaussian Processes** in the *Bayesian Modelling* coursework. Whilst approximate inference using **ICM, MCMC, Mean Field Variational Inference** and **Variational AutoEncoders (VAE)** were covered in the *Inference* coursework. Both report achieved high first class mark. 

@@ -7,11 +7,26 @@ The contents of this repository consist of 6 essential aspects of machine learni
 * Dimensionality Reduction
   * Principal Component Analysis
   * Linear Discriminant Analysis
-* Supervised Learninng
+* Supervised Learning
+  * Regression
+    * Simple Linear Regression
+    * Polynomial Linear Regression
+  * Classification
+    * Logistic Regression (as a classifier)
+    * K-NN
+    * SVM
+    * Naive Bayes
+    * Decission Tree
+    * Random Forest
 * Unsupervised Learning
+  * K-Means Clustering
+  * Hierarchical Clustering
 * Reinforcement Learning (TBA)
 * Deep Learning
-
+  * Artificial Neural Network
+  * Convolution Neural Network
+  * Recurrent Neural Network (TBA)
+  * AutoEncoders
 
 
 

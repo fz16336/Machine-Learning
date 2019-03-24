@@ -5,7 +5,9 @@ The contents of this repository consist of 6 essential aspects of machine learni
 
 * Data Preprocessing 
 * Dimensionality Reduction
-* Supervised Learning
+  * Principal Component Analysis
+  * Linear Discriminant Analysis
+* Supervised Learninng
 * Unsupervised Learning
 * Reinforcement Learning (TBA)
 * Deep Learning

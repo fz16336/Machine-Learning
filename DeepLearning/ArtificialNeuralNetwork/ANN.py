@@ -4,7 +4,6 @@ Spyder Editor
 
 This is a temporary script file.
 """
-
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -15,7 +14,7 @@ import warnings
 '''
 These warnings filter are to unclutter output and easy-to-read purposes only!
 Remember to lookup replacements. Uncomment for info
-Reminder: some functions in sckitlearn have been/will be depreceated, 
+Reminder: some functions in sckitlearn have been/will be depreceated,
 
 '''
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -38,8 +37,8 @@ X = X[:, 1:]
 
 # splitting into the Training set and Test set
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, 
-                                                    test_size = 0.2, 
+X_train, X_test, y_train, y_test = train_test_split(X, y,
+                                                    test_size = 0.2,
                                                     random_state = 0)
 
 # feature Scaling
@@ -52,34 +51,37 @@ X_test = sc.transform(X_test)
 # initialising the ANN
 classifier = Sequential()
 
-# Adding the input layer and the first hidden layer
-classifier.add(Dense(
-        units = 6, 
-        kernel_initializer = 'uniform', 
-        activation = 'relu',
-        input_dim = 11))
-# Adding the second hidden layer
+# input layer and the first hidden layer
 classifier.add(Dense(
         units = 6,
-        kernel_initializer = 'uniform', 
+        kernel_initializer = 'uniform',
+        activation = 'relu',
+        input_dim = 11))
+# second hidden layer
+classifier.add(Dense(
+        units = 6,
+        kernel_initializer = 'uniform',
         activation = 'relu'))
-# Adding the output layer
+# output layer
 classifier.add(Dense(
         units = 1,
         kernel_initializer = 'uniform',
         activation = 'sigmoid'))
-# Compiling the ANN
+# compiling the ANN
 classifier.compile(optimizer = 'adam',
                    loss = 'binary_crossentropy',
                    metrics = ['accuracy'])
 
-# Fitting the ANN to the Training set
+# training
 classifier.fit(X_train, y_train, batch_size = 10, epochs = 100)
 
-# Predicting the Test set results
+# testing
 y_pred = classifier.predict(X_test)
 y_pred = (y_pred > 0.5)
 
-# Making the Confusion Matrix
+# confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+CM = pd.DataFrame(cm)
+print("Confusion Matrix:")
+CM.head()

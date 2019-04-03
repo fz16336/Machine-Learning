@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Apr  27 12:42:14 2019
+Created on Wed Mar  27 12:42:14 2019
 
 @author: Farrel
 """
@@ -16,7 +16,7 @@ import warnings
 '''
 These warnings filter are to unclutter output and easy-to-read purposes only!
 Remember to lookup replacements. Uncomment for info
-Reminder: some functions in sckitlearn have been/will be depreceated, 
+Reminder: some functions in sckitlearn have been/will be depreceated,
 
 '''
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -40,7 +40,7 @@ X = X[:, 1:]
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2,
                                                         random_state = 0)
 
 # Feature Scaling
@@ -56,25 +56,25 @@ classifier = Sequential()
 
 # input layer and the first hidden layer
 classifier.add(Dense(
-                units = 6, 
-                kernel_initializer = 'uniform', 
-                activation = 'relu', 
+                units = 6,
+                kernel_initializer = 'uniform',
+                activation = 'relu',
                 input_dim = 11))
 
 # second hidden layer
 classifier.add(Dense(
-                units = 6, 
-                kernel_initializer = 'uniform', 
+                units = 6,
+                kernel_initializer = 'uniform',
                 activation = 'relu'))
 
 # output layer
 classifier.add(Dense(
-                units = 1, 
-                kernel_initializer = 'uniform', 
+                units = 1,
+                kernel_initializer = 'uniform',
                 activation = 'sigmoid'))
 
 # compiling the ANN
-classifier.compile(optimizer = 'adam', 
+classifier.compile(optimizer = 'adam',
                    loss = 'binary_crossentropy', metrics = ['accuracy'])
 
 # fitting to Training set

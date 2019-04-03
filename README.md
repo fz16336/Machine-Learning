@@ -25,9 +25,13 @@ The contents of this repository consist of 6 essential aspects of machine learni
 * **Reinforcement Learning (TBA)**
 * **Deep Learning**
   * Artificial Neural Network
-  * Convolution Neural Network
-  * Recurrent Neural Network (TBA)
-  * AutoEncoders
+  * Convolutional Neural Network
+  * Recurrent Neural Network
+  * AutoEncoders (TBA)
+  * SSD (In-progress)
+ * **Model Selection and Boosting** (TBA)
+ * **Associative-Rule Learning** (TBA)
+ * **Natural Language Processing** (TBA)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
